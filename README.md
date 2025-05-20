@@ -1,17 +1,15 @@
-# 🚀 Convex Hull Algorithms (CUDA Optimized)
+# Parallel Convex Hull Computation Algorithms
 
 > High-performance CUDA implementations of classical and novel convex hull algorithms, benchmarked and compared for large-scale 2D point sets.
 
-## ✨ Overview
+## Overview
 
 This project implements and benchmarks various **convex hull algorithms** using **CUDA C++**, designed for parallel execution on GPUs.  
-The included algorithms range from classical approaches like **QuickHull** to novel hybrid optimizations like **HeapHull** and **Hybrid-sfqhull**.
-
-The goal is to evaluate and compare performance at scale, while exploring different strategies for parallelizing geometric algorithms.
+The goal is to evaluate and compare performance at scale, while proposing a novel approach different strategies for parallelizing geometric algorithms.
 
 ---
 
-## 🛠 Features
+## Features
 
 - CUDA implementations of:
   - **QuickHull**
@@ -26,7 +24,7 @@ The goal is to evaluate and compare performance at scale, while exploring differ
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```plaintext
 pcp_final/
@@ -46,9 +44,9 @@ pcp_final/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
-### 📋 Requirements
+### Requirements
 
 - CUDA Toolkit (v10.0 or higher recommended)
 - NVIDIA GPU with compute capability 5.0+
@@ -58,7 +56,7 @@ pcp_final/
 
 ---
 
-### 🔧 Build Instructions
+### Build Instructions
 
 You can compile individual `.cu` files using `nvcc`:
 
@@ -69,7 +67,7 @@ nvcc Hybrid-sfqhull.cu -o Hybrid-sfqhull
 nvcc incremental.cu -o incremental
 ```
 
-Or compile and run everything automatically using:
+Or you can compile and run everything automatically using:
 
 ```bash
 ./run_all.bat
@@ -79,7 +77,7 @@ Or compile and run everything automatically using:
 
 ---
 
-### 🏃‍♂️ Run Instructions
+### Run Instructions
 
 After building, simply execute:
 
@@ -94,51 +92,23 @@ Input data can be auto-generated or provided manually.
 
 ---
 
-## 📊 Results
+##  Results
 
 Benchmark results are recorded in [`results.txt`](./results.txt).
 
-Key findings include:
-
-| Algorithm        | Runtime (ms) | Notes                    |
-| ---------------- | ------------ | ------------------------ |
-| QuickHull        | XXX          | Baseline                 |
-| HeapHull         | XXX          | Improved load balancing  |
-| Hybrid-sfqhull    | XXX          | Best hybrid performance  |
-| Incremental      | XXX          | High variance at scale   |
-
-> 📈 *Exact runtime values are available inside the `results.txt` file.*
-
 ---
 
-## 📊 Future Work
-
-- Extend to 3D convex hulls
-- Experiment with shared memory optimizations
-- Adaptive load balancing during recursion
-- Visualization of the resulting convex hulls
-- Profiling with Nsight and optimizing warp divergence
-
----
-
-## 🤝 Contributing
+## Contributing
 
 Pull requests are welcome!  
 If you have improvements, new algorithms, or suggestions, feel free to open an issue or a PR.
 
 ---
 
-## 📜 License
+## License
 
 Distributed under the MIT License.  
-See `LICENSE` for more information.
 
 ---
 
-## ✨ Acknowledgements
-
-- Classical algorithms based on standard computational geometry literature
-- CUDA parallelization inspired by NVIDIA research papers
-
----
 
