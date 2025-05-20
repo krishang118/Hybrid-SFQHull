@@ -32,10 +32,8 @@ files/
 ├── quickhull.cu        # CUDA QuickHull
 ├── hybrid-sfqhull.cu   # Hybrid SFQHull Novel Approach
 ├── scan.cu             # CUDA Graham's Scan
-│
 ├── input_gen.ipynb     # Jupyter Notebook to generate synthetic inputs
 ├── run_all.bat         # Batch script to compile & run all algorithms
-│
 ├── results.txt         # Benchmark results (runtime comparisons)
        
 ```
@@ -71,7 +69,7 @@ Or you can compile and run everything automatically using:
 ./run_all.bat
 ```
 
->  Make sure the `.bat` file paths match your local environment setup.
+>  Make sure the `.bat` file paths match the local environment setup.
 
 ---
 
