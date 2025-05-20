@@ -71,7 +71,7 @@ Or you can compile and run everything automatically using:
 ./run_all.bat
 ```
 
-> ⚡ Make sure the `.bat` file paths match your local environment setup.
+>  Make sure the `.bat` file paths match your local environment setup.
 
 ---
 
