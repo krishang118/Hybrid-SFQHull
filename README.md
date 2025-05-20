@@ -25,7 +25,7 @@ The goal is to evaluate and compare performance at scale, while proposing an eff
 ## Project Structure
 
 ```plaintext
-pcp_final/
+files/
 │
 ├── heaphull.cu         # CUDA HeapHull
 ├── incremental.cu      # CUDA Asynchronous Incremental Approach
