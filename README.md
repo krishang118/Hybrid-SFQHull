@@ -5,7 +5,7 @@
 ## Overview
 
 This project implements and benchmarks various convex hull algorithms using CUDA C++, designed for parallel execution on GPUs.  
-The goal is to evaluate and compare performance at scale, while proposing a novel spatial filter-based divide-and-conquer approach for optimized and efficient computation.
+The goal is to evaluate and compare performance at scale, while proposing an efficient novel approach for optimized computation.
 
 ---
 
