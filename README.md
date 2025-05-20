@@ -90,7 +90,7 @@ After building, just execute:
 
 ##  Results
 
-Benchmark results are recorded in [`results.txt`](./results.txt).
+Benchmark results are recorded in `results.txt`.
 
 ---
 
