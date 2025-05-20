@@ -30,7 +30,7 @@ files/
 ├── heaphull.cu         # CUDA HeapHull
 ├── incremental.cu      # CUDA Asynchronous Incremental Approach
 ├── quickhull.cu        # CUDA QuickHull
-├── Hybrid-sfqhull.cu   # Hybrid SFQHull Novel Approach
+├── hybrid-sfqhull.cu   # Hybrid SFQHull Novel Approach
 ├── scan.cu             # CUDA Graham's Scan
 │
 ├── input_gen.ipynb     # Jupyter Notebook to generate synthetic inputs
