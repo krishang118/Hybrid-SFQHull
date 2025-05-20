@@ -4,8 +4,8 @@
 
 ## Overview
 
-This project implements and benchmarks various **convex hull algorithms** using **CUDA C++**, designed for parallel execution on GPUs.  
-The goal is to evaluate and compare performance at scale, while proposing a novel approach different strategies for parallelizing geometric algorithms.
+This project implements and benchmarks various convex hull algorithms using CUDA C++, designed for parallel execution on GPUs.  
+The goal is to evaluate and compare performance at scale, while proposing a novel spatial filter-based divide-and-conquer approach for optimized and efficient computation.
 
 ---
 
@@ -14,14 +14,12 @@ The goal is to evaluate and compare performance at scale, while proposing a nove
 - CUDA implementations of:
   - **QuickHull**
   - **HeapHull**
-  - **HYBRID-sfqHull**
-  - **Incremental Convex Hull**
-  - **Parallel Scan Techniques**
+  - **Asynchronous Incremental Approach**
+  - **Parallel Graham's Scan**
+  - **Hybrid SFQHull (The Novel Approach)**
 - Synthetic data generation using Python (`input_gen.ipynb`)
-- Benchmarking across multiple datasets
 - Batch execution script (`run_all.bat`)
-- Clean modular structure for easy extension
-
+  
 ---
 
 ## Project Structure
@@ -29,17 +27,17 @@ The goal is to evaluate and compare performance at scale, while proposing a nove
 ```plaintext
 pcp_final/
 │
-├── heaphull.cu         # CUDA implementation of HeapHull
-├── incremental.cu      # Incremental convex hull algorithm
-├── quickhull.cu        # Standard QuickHull algorithm
-├── Hybrid-sfqhull.cu    # Hybrid Hybrid-sfqhull approach
-├── scan.cu             # Parallel scan (prefix sum) utilities
+├── heaphull.cu         # CUDA HeapHull
+├── incremental.cu      # CUDA Asynchronous Incremental Approach
+├── quickhull.cu        # CUDA QuickHull
+├── Hybrid-sfqhull.cu   # Hybrid SFQHull Novel Approach
+├── scan.cu             # CUDA Graham's Scan
 │
 ├── input_gen.ipynb     # Jupyter Notebook to generate synthetic inputs
 ├── run_all.bat         # Batch script to compile & run all algorithms
 │
 ├── results.txt         # Benchmark results (runtime comparisons)
-└── readme.txt          # (Legacy README - superseded by this file)
+       
 ```
 
 ---
@@ -79,7 +77,7 @@ Or you can compile and run everything automatically using:
 
 ### Run Instructions
 
-After building, simply execute:
+After building, just execute:
 
 ```bash
 ./quickhull
@@ -87,8 +85,6 @@ After building, simply execute:
 ./Hybrid-sfqhull
 ./incremental
 ```
-
-Input data can be auto-generated or provided manually.
 
 ---
 
@@ -100,8 +96,7 @@ Benchmark results are recorded in [`results.txt`](./results.txt).
 
 ## Contributing
 
-Pull requests are welcome!  
-If you have improvements, new algorithms, or suggestions, feel free to open an issue or a PR.
+Contributions are welcome!
 
 ---
 
@@ -110,5 +105,3 @@ If you have improvements, new algorithms, or suggestions, feel free to open an i
 Distributed under the MIT License.  
 
 ---
-
-
