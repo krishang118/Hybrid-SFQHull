@@ -1,4 +1,4 @@
-# Parallel Convex Hull Computation and Benchmarking
+# Parallel Convex Hull Computation and Benchmarkin
 
 > High-performance CUDA implementations of classical and novel convex hull algorithms, benchmarked and compared for large-scale 2D point sets.
 
