@@ -22,7 +22,6 @@ The goal is to evaluate and compare performance at scale, while proposing an eff
 
 ```
 files/
-│
 ├── heaphull.cu         # CUDA HeapHull
 ├── incremental.cu      # CUDA Asynchronous Incremental Approach
 ├── quickhull.cu        # CUDA QuickHull
