@@ -1,13 +1,11 @@
 # Parallel Convex Hull Computation and Benchmarking
 
-> High-performance CUDA implementations of classical and novel convex hull algorithms, benchmarked and compared for large-scale 2D point sets.
-
+High-performance CUDA implementations of classical and novel convex hull algorithms, benchmarked and compared for large-scale 2D point sets.
+ 
 ## Overview
 
 This project implements and benchmarks various convex hull algorithms using CUDA C++, designed for parallel execution on GPUs.  
 The goal is to evaluate and compare performance at scale, while proposing an efficient novel approach for optimized computation.
-
----
 
 ## Features
 
@@ -20,11 +18,9 @@ The goal is to evaluate and compare performance at scale, while proposing an eff
 - Synthetic data generation using Python (`input_gen.ipynb`)
 - Batch execution script (`run_all.bat`)
   
----
-
 ## Project Structure
 
-```plaintext
+```
 files/
 │
 ├── heaphull.cu         # CUDA HeapHull
@@ -34,11 +30,8 @@ files/
 ├── scan.cu             # CUDA Graham's Scan
 ├── input_gen.ipynb     # Jupyter Notebook to generate synthetic inputs
 ├── run_all.bat         # Batch script to compile & run all algorithms
-├── results.txt         # Benchmark results (runtime comparisons)
-       
+├── results.txt         # Benchmark results (runtime comparisons) 
 ```
-
----
 
 ## Getting Started
 
@@ -49,8 +42,6 @@ files/
 - C++ Compiler
 - Python 3.x (for input generation, if needed)
 - `numpy` and `matplotlib` for `input_gen.ipynb`
-
----
 
 ### Build Instructions
 
@@ -69,9 +60,7 @@ Or you can compile and run everything automatically using:
 ./run_all.bat
 ```
 
->  Make sure the `.bat` file paths match the local environment setup.
-
----
+Make sure the `.bat` file paths match the local environment setup.
 
 ### Run Instructions
 
@@ -84,22 +73,14 @@ After building, just execute:
 ./incremental
 ```
 
----
-
 ##  Results
 
 Benchmark results are recorded in `results.txt`.
-
----
 
 ## Contributing
 
 Contributions are welcome!
 
----
-
 ## License
 
 Distributed under the MIT License.  
-
----
