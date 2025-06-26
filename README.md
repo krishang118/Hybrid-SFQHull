@@ -10,11 +10,11 @@ The goal is to evaluate and compare performance at scale, while proposing an eff
 ## Features
 
 - CUDA implementations of:
-  - **QuickHull**
-  - **HeapHull**
-  - **Asynchronous Incremental Approach**
-  - **Parallel Graham's Scan**
-  - **Hybrid SFQHull (The Novel Approach)**
+  - QuickHull
+  - HeapHull
+  - Asynchronous Incremental Approach
+  - Parallel Graham's Scan
+  - Hybrid SFQHull (The Novel Approach)
 - Synthetic data generation using Python (`input_gen.ipynb`)
 - Batch execution script (`run_all.bat`)
   
